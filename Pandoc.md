@@ -36,3 +36,13 @@ pandoc -c stylesheet.css --metadata pagetitle="My Output" --self-contained input
 - ``-c``：指定 CSS 文件的路径。
 - ``--self-contained``：让 pandoc 把 CSS 的内容添加到新生成的 HTML 的头部中。注意：由于 Pandoc 套用 CSS 模板时，默认只会在新生成的 HTML 文件的头部加一个引用 CSS 文件的标签，所以如果不加 ``--self-contained`` 选项，改变两个文件的相对位置，模板的效果就会消失。
 - ``--metadata``：可选项，为新生成的 HTML 文件添加一些信息。比如在此处就为新生成的 HTML 文件加了个 ``<title>`` 标签。
+
+### 2. Markdown 转 Word 并套用一个模板
+
+````bash
+pandoc input.md -o output.docx --reference-doc=template.docx
+````
+
+其中：
+
+- ``--reference-doc``：用于指定模板文件。
