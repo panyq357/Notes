@@ -12,6 +12,8 @@
 
 命令：``python3 -m pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/``
 
+或者用清华的源：``python3 -m pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple``
+
 或者也可以直接把以下内容直接添加到``~/.pip/pip.conf``里。
 
 ````text

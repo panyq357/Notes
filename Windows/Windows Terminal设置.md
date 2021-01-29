@@ -7,6 +7,7 @@
 GUID可在PowerShell中用``[guid]::NewGuid()``生成。
 
 ### 添加Git Bash
+
 ````json
 {
     "guid": "{abcdabcd-e4cc-4718-a270-ccadc3c21223}",
@@ -29,5 +30,18 @@ GUID可在PowerShell中用``[guid]::NewGuid()``生成。
     "name": "my server",
     "icon": "ms-appx:///ProfileIcons/{550ce7b8-d500-50ad-8a1a-c400c3262db3}.png",
     "commandline": "ssh -p 端口号 用户名@服务器IP或域名"
+},
+````
+
+### 添加 Conda Powershell
+
+````json
+{
+    "guid": "{abcdabcd-c1d4-4adc-845a-4b039bd26576}",
+    "hidden": false,
+    "name": "Conda PS",
+    "commandline": "%windir%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -NoExit -Command & 'C:\\Users\\panyq\\miniconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\panyq\\miniconda3'",
+    "icon": "C:\\Users\\panyq\\miniconda3\\Lib\\site-packages\\conda\\shell\\conda_icon.ico",
+    "startingDirectory": "%HOMEPATH%"
 },
 ````
