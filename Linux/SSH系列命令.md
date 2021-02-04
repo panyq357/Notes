@@ -12,6 +12,14 @@ ssh -p 12345 root@123.45.67.89
 
 ## ``ssh-keygen``
 
+删除 ``.ssh/known_hosts`` 中指定 IP 的内容
+
+````bash
+ssh-keygen -R $IP
+````
+
+参考：<https://serverfault.com/questions/29262/how-to-manage-my-ssh-known-hosts-file>
+
 ## ``ssh-copy-id`` （仅限 Linux，Windows 上没这个命令）
 
 示例：
