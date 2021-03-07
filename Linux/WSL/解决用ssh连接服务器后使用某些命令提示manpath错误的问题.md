@@ -22,6 +22,6 @@ Generating locales (this might take a while)...
 Generation complete.
 ````
 
-然后再用 ``ssh`` 试试，就没有错误了。
+然后重开一个终端，再用 ``ssh`` 试试，就没有错误了。
 
 参考：<https://blog.csdn.net/everblog/article/details/79765313>
