@@ -9,6 +9,14 @@ git config --global user.name YOURUSERNAME
 git config --global user.email YOUREMAIL
 ````
 
+### 显示中文字符
+
+```bash
+git config --global core.quotepath false
+```
+
+参考：<https://blog.csdn.net/u012145252/article/details/81775362>
+
 ### Github SSH 测试
 
 ````bash
